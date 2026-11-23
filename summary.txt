@@ -12,6 +12,7 @@ BASIC STATISTICS
 Total Lines 	: 5
 ERROR Count 	: 2
 WARNING Count 	: 1
+INFO Count	: 2
 DEBUG Count	: 0
 
 ----------------------------------------
