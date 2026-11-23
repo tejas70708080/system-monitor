@@ -25,6 +25,7 @@ error_exit(){					#prints an error message and exit with the specified error cod
 TOTAL_LINES=0
 ERROR_COUNT=0
 WARNING_COUNT=0
+DEBUG_COUNT=0
 
 #Constants for top-words analysis
 readonly MIN_WORD_LENGTH=3			#ignore words shorter than 3 characters
@@ -79,6 +80,8 @@ compute_statistics(){
 	ERROR_COUNT=$(count_matches "error" "$log_file")	#Find the count of "error"
 
 	WARNING_COUNT=$(count_matches "warning" "$log_file")	#Find the count of "warning"
+
+	DEBUG_COUNT=$(count_matches "debug" "$log_file")	#Find the count of "debug"
 }
 
 
@@ -140,6 +143,7 @@ generate_report(){
 	echo "Total Lines 	: $TOTAL_LINES"
 	echo "ERROR Count 	: $ERROR_COUNT"
 	echo "WARNING Count 	: $WARNING_COUNT"
+	echo "DEBUG Count	: $DEBUG_COUNT"
 	echo ""
 
 	echo "$LINE_MINOR"
