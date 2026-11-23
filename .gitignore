@@ -1,0 +1,7 @@
+# Test leftovers
+*.tmp
+
+# Editor / OS files
+*.swp
+.vscode/
+.DS_Store
